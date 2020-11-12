@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>本章实例二：制作web2.0风格导航</title>
+ <style> 
+ul{ list-style:none;}										/*设置列表不带列表符*/ 
+ul li a.home{ background:url(images/li_home.gif) no-repeat;}		/*给导航菜单项“首页”设置背景图片*/
+ul li a.product{ background:url(images/li_product.gif) no-repeat;} 	/*给导航菜单项“产品”设置背景图片*/
+ul li a.serve{ background:url(images/li_serve.gif) no-repeat;}		/*给导航菜单项“服务”设置背景图片*/
+ul li a.client{ background:url(images/li_client.gif) no-repeat;} 		/*给导航菜单项“客户”设置背景图片*/
+ul li a.about{ background:url(images/li_about.gif) no-repeat;}	 	/*给导航菜单项“关于我们”设置背景图片*/
+
+ 
+ 	ul li a{width:192px; height:46px; display:block; 		/*设置超链接的宽高和图片的宽高一致，显示属性为块*/
+			text-align:center;						/*设置文字水平居中对齐*/
+			line-height:46px; 						/*设置文字垂直居中对齐*/
+			font-size:14px; color:#fff; font-weight:bold; text-decoration:none;	
+											/*设置文字大小为14像素，白色粗体，不带下划线*/
+			} 
+
+	ul li a:hover{ color:maroon; background:url(images/li_hover.gif) no-repeat;}
+				/*设置鼠标滑过超链接时,原本的背景图片变为图片li_hover.gif,文字颜色变为枣红色*/
+
+	 
+</style>
+</head>
+
+<body>	
+   <ul>
+   	<li><a href="#" class="home">主页</a></li>
+        <li><a href="#" class="product">产品</a></li>
+        <li><a href="#" class="serve">服务</a></li>
+        <li><a href="#" class="client">顾客</a></li>
+        <li><a href="#" class="about">关于我们</a></li>
+    </ul>
+
+</body>
+</html>
